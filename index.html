@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Laxmi Engineering Center Medak</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to right,#eef2f3,#ffffff);
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:15px;
+    background:#0a3d62;
+    position:sticky;
+    top:0;
+}
+nav a{color:white;text-decoration:none;font-weight:bold;}
+nav a:hover{color:#00d2ff;}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#0a3d62,#3c6382);
+    color:white;
+}
+
+.logo{
+    width:110px;
+    border-radius:10px;
+    border:3px solid white;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+    color:white;
+}
+
+/* CALL BANNER */
+.call-banner{
+    background:linear-gradient(to right,#ff512f,#dd2476);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.call-image-btn img{
+    width:150px;
+    margin-top:15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+.call-image-btn img:hover{
+    transform:scale(1.1);
+}
+
+/* CARDS */
+.container{padding:20px;}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.grid img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* BUTTONS */
+.btn{
+    display:inline-block;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:25px;
+    text-decoration:none;
+    color:white;
+}
+
+.whatsapp{background:#25D366;}
+.call-btn{background:#0984e3;}
+.map-btn{background:#e17055;}
+
+/* MAP */
+iframe{
+    width:100%;
+    height:300px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    background:#0a3d62;
+    color:white;
+}
+
+/* FLOAT BUTTONS */
+.float-btn{
+    position:fixed;
+    right:20px;
+    padding:12px;
+    border-radius:50%;
+    color:white;
+    font-size:20px;
+    text-align:center;
+}
+
+.whatsapp-float{
+    bottom:20px;
+    background:#25D366;
+}
+
+.call-float{
+    bottom:80px;
+    background:#0984e3;
+}
+
+/* POPUP */
+.popup{
+    display:none;
+    position:fixed;
+    bottom:140px;
+    right:20px;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.popup a{
+    display:block;
+    margin:5px;
+    padding:10px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#location">Location</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<img src="https://i.ibb.co/dwtpG6qm/your-logo.jpg" class="logo">
+<h1>Sri Laxmi Engineering Center</h1>
+<p>MG Road, Shivaji Statue, Medak - 502110</p>
+<p>🕒 Mon–Sat: 10AM–10PM</p>
+</header>
+
+<div class="hero">
+<h2>Trusted Pumps & Pipe Solutions</h2>
+<p>Serving Since 1988</p>
+</div>
+
+<!-- CALL SECTION -->
+<div class="call-banner">
+<h2>📞 Call us for Best Deals Today!</h2>
+
+<a href="tel:9392079056" class="call-image-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
+</a>
+</div>
+
+<div class="container">
+
+<div class="card" id="about">
+<h2>About Us</h2>
+<p>Authorized dealer of CRI Pumps & distributor of Birla & Supreme Pipes.</p>
+</div>
+
+<div class="card" id="products">
+<h2>Our Products</h2>
+<div class="grid">
+<img src="https://i.ibb.co/9HjGrcMX/cri.jpg">
+<img src="https://i.ibb.co/Q4Q5H0g/birla.jpg">
+<img src="https://i.ibb.co/LzbN28XP/product.jpg">
+</div>
+</div>
+
+<div class="card" id="location">
+<h2>Location</h2>
+
+<iframe src="https://www.google.com/maps?q=Shivaji%20Statue%20Medak&output=embed"></iframe>
+
+<a class="btn map-btn" 
+href="https://www.google.com/maps/dir/?api=1&destination=Shivaji+Statue+Medak" target="_blank">
+📍 Get Directions
+</a>
+</div>
+
+<div class="card" id="contact">
+<h2>Contact</h2>
+
+<p>
+📞 <a href="tel:9392079056">9392079056</a> |
+<a href="tel:8247379977">8247379977</a> |
+<a href="tel:8919200344">8919200344</a>
+</p>
+
+<a class="btn whatsapp" 
+href="https://wa.me/919392079056?text=Hello%20Sri%20Laxmi">
+WhatsApp
+</a>
+
+<a class="btn call-btn" href="tel:9392079056">
+Call Now
+</a>
+</div>
+
+</div>
+
+<footer>
+© 1988 - 2026 Sri Laxmi Engineering Center
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<div class="float-btn whatsapp-float" onclick="togglePopup()">💬</div>
+
+<a href="tel:9392079056" class="float-btn call-float">📞</a>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+<a href="https://wa.me/919392079056">Chat 1</a>
+<a href="https://wa.me/918919200344">Chat 2</a>
+</div>
+
+<script>
+function togglePopup(){
+let p=document.getElementById("popup");
+p.style.display=(p.style.display=="block")?"none":"block";
+}
+</script>
+
+</body>
+</html>
